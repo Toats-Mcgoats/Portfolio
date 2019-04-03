@@ -4,9 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
-    
+    <header id="scrolled">
+        <nav>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="Resume.pdf" download="resume">Resum&Eacute;</a></li>
+        </nav>
+    </header>
+<!--End Navbar Section-->
+<!--Intro-->
+    <main>
+        <section class="intro">
+            <div class="inner">
+                <h1 class="name">David Rosenberger</h1>
+                <hr>
+                <h3 class="title">Web Developer</h3>
+                <button class="btn"><a href="#portfolio">Click Me!</a></button>
+            </div>
+        </section>
+<!--End Intro-->
+<!--About-->
+        <section id="about" class="about">
+            <h3>Hey! I'm David</h3> 
+            <p>Since my start a few years ago, I've worked on Non-profits, consulted small businesses in development and implentmentation,
+                and collaborated with others to make beautiful things happen.
+                I'm a highly motivated tinkerer who loves creating new
+                and exciting things. <b>Oh!</b> And I'm bacon's biggest fanboy!</p>
+        </section>
+<!--End About Section-->
+<!--Projects-->
+        <section id="portfolio" class="project-container">
+            <h1 class="heading">Newest Projects</h1>
+
+            <section id="project1">
+                <a href="#" target="_blank">
+                    <div class="description">
+                        <h3>Title</h3>
+                        <p>Short description about what was bulit and implentmentation.</p>
+                        <div class="skills-used">
+                            <h3 class="skills">Skills deployed</h3>
+                            <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section id="project2">
+                <a href="#" target="_blank">    
+                    <div class="description">
+                        <h3>Title</h3>
+                        <p>Short description about what was bulit and implentmentation.</p>
+                        <div class="skills-used">
+                            <h3 class="skills">Skills deployed</h3>
+                            <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section id="project3">
+                <a href="#" target="_blank">
+                    <div class="description">
+                        <h3>Title</h3>
+                        <p>Short description about what was bulit and implentmentation.</p>
+                        <div class="skills-used">
+                            <h3 class="skills">Skills deployed</h3>
+                            <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            
+            <section id="project4">
+                <a href="#" target="_blank">
+                    <div class="description">
+                        <h3>Title</h3>
+                        <p>Short description about what was bulit and implentmentation.</p>
+                        <div class="skills-used">
+                            <h3 class="skills">Skills deployed</h3>
+                            <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            <section id="project5">
+                <a href="#" target="_blank">
+                    <div class="description">
+                        <h3>Title</h3>
+                        <p>Short description about what was bulit and implentmentation.</p>
+                        <div class="skills-used">
+                            <h3 class="skills">Skills deployed</h3>
+                            <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section id="project6">
+                <a class="description" href="#" target="_blank">  
+                    <h3>Title</h3>
+                    <p>Short description about what was bulit and implentmentation.</p>
+                    <div class="skills-used">
+                        <h3 class="skills">Skills deployed</h3>
+                        <p>skill1, skill2, skill3, skill4, skill5, skill6, etc.</p>
+                    </div>                    
+                </a>    
+            </section>
+            <div class="see-more">
+            <p>See what else I've been working on</p>
+            <a href="https://github.com/Toats-Mcgoats" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+<!--End Projects Section-->
+<!--Testimonials-->
+        <section class="testimonials">
+            <h1 class="heading">Testimonials</h1>
+            <hr style="background-image: radial-gradient(#000, transparent);">
+            <h3 class="sub heading">What clients are saying...</h3>
+
+            <div class="mySlides fade">
+                <img class="avatar" src="/images/image2.jpg">
+                <div class="slide-info">
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel repellendus debitis, animi aperiam adipisci 
+                    voluptates culpa veritatis tempora at id alias illo minima? 
+                    Mollitia, placeat.</p>
+                    <h1>Company Name</h1>
+                    <h2>sub-title</h2>
+                </div>
+            </div>
+                    
+            <div class="mySlides fade">
+                <img class="avatar" src="/images/image1.jpg" alt="logo">
+                <div class="slide-info">
+                    <p class="quote">Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Dolore nam sapiente iste ipsam 
+                        repellendus voluptatibus!</p>
+                    <h1>Company Name</h1>
+                    <h2>sub-title</h2>
+                </div>
+            </div>
+<!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </section>
+<!--End of Testimonials-->
+<!--Connect-->
+        <section id="connect">
+            <div class="connect-card">
+                <h1>Starting a Project?</h1>
+                <p>Interested in working together? I'm alaways looking for new 
+                challenges. 
+                </p>
+                <button class="btn"><a href="mailto:drosenberger84@gmail.com?subject=Got a job for ya!">Click me too!</a></button>
+            </div>
+        </section>
+<!--End of Connect-->
+    </main>
+    <footer>
+        <div class="container">
+            <a href="index.html">DR</a>
+            <div class="tagline">Something catchy here.</div>
+            <div class="social-icons">
+                <ul>
+                    <a href="https://linkedin.com/in/david-rosenberger-b5449a172" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Toats-Mcgoats/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:drosenberger84@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a href="https://codepen.io/drosenberger/" target="_blank"><i class="fab fa-codepen"></i></a>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>Cafted while thinking of Bacon | &copy; twentyNineteen - Davd Rosenberger</h4>
+        </div>
+    </footer>
+    <script src="/functions/main.js"></script>
 </body>
 </html>
