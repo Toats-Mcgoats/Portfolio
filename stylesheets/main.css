@@ -104,10 +104,10 @@ hr {
 .btn {
     background-color: #00defc;
     border-radius: 4px;
-    padding: 1em 0;
-    min-width: 15em;
+    padding: 20px 0;
+    min-width: 15rem;
     border: none;
-    font-size: .5em;
+    font-size: 1.5rem;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -164,10 +164,14 @@ button a {
 }
 
 .description {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: zoom-in;
+    color: #eee;
     display: none;
     height: inherit;
     text-align: center;
     width: inherit;
+   
 }
 
 .description h3 {
@@ -197,10 +201,7 @@ button a {
 #project4:hover .description,
 #project5:hover .description,
 #project6:hover .description {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #eee;
     display: block;
-    cursor: zoom-in;
 }
 
 #project1 {
@@ -259,7 +260,7 @@ button a {
     text-align: center !important;
   }
 
-  .avatar {
+.avatar {
     border-radius: 100%;
     width: 10em;
     height: 10em;
@@ -313,3 +314,39 @@ button a {
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+.connect-card {
+    background-color:#0026a3;
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2em 2em;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: max-content; 
+}
+
+.connect-card h1 {
+    font-size: 2em;
+}
+
+.connect-card p {
+    width: 30%;
+}
+
+footer{
+    background-color: #00dffc75;
+    color: #fff;
+    width: 100%;
+    height: 60vh;
+}
+
+@media only screen and (max-width: 425px) {
+    .connect-card {
+        flex-direction: column;
+    }
+}
