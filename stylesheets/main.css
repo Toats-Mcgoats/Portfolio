@@ -309,12 +309,14 @@ button a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 40%;
     margin: auto;
-    padding: 2em 2em;
+    padding: 2em;
     position: relative;
-    top: 100px;
+    top: 7em;
     text-align: center;
-    width: max-content; 
+    max-width: max-content; 
 }
 
 .connect-card h1 {
@@ -332,8 +334,9 @@ footer{
     height: 60vh;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 960px) {
     .connect-card {
         flex-direction: column;
+        top: 15em;
     }
 }
