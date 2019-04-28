@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20em;
+}
+
+.container .logo {
+    font-size: 3em;
+    text-decoration: none; 
+    border: 6px solid #000;
+    height: 4rem;
+    padding: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    font-weight: bolder;
+    margin: 2% auto;
+}
+.social-icons {
+    font-size: 2em;
+    width: 60%;
+}
+
+.social-icons ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+}
+
+.social-icons ul li {
+    list-style: none;
+}
+
+
+.copyright {
+    text-align: center;
+    padding-bottom: 1px;
+}

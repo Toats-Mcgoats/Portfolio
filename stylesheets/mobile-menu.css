@@ -1,0 +1,100 @@
+@media only screen and (max-width: 960px) {
+    header {
+        background-color: transparent;
+    }
+    #mobile-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+   
+    #hamburger-icon {
+        background-color: rgba(0,0,0, 0.3);
+        position: absolute;
+        top: 0;
+        right: 10px;
+        display: inline-block;
+        margin: .4em;
+        padding: 1em;
+    }
+    .icon-bars div {
+        height: 3px;
+        background: #fff;
+        margin: 4px 0;
+        transition: .3s;
+    }
+    
+    .icon-bars {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .one {
+        width: 35px;
+    }
+    .two {
+        width: 20px;
+    }
+    .three {
+        width: 25px;
+    }
+    .icon-bars:hover div {
+        width: 30px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .overlay {    
+        height: 100%;
+        width: 0%;
+        position: fixed; 
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.95);
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s;
+    }
+
+    /* Position the content inside the overlay */
+    .overlay-content {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 20%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+    }
+
+    .overlay ul {
+      list-style: none;
+      color: #eee;
+      padding: 0;
+      margin: 10% 0;
+    }
+  
+  /* The navigation links inside the overlay */
+    .overlay a {
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #eee;
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+  
+  /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+.closebtn {
+      display: inherit;
+    }   
+}
